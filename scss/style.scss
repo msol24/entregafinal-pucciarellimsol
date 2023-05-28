@@ -1,0 +1,39 @@
+@import '../scss/base/vars';
+@import '../scss/base/reset';
+@import '../scss/base/map';
+@import '../scss/base/mixin';
+@import '../scss/componentes/footer';
+@import '../scss/componentes/header';
+@import '../scss/componentes/index';
+@import '../scss/componentes/carta';
+@import '../scss/componentes/imagenes';
+@import '../scss/componentes/unete';
+@import '../scss/componentes/historia';
+body{
+	background-color: map-get($colores, blanco2)}
+
+h1 {
+	@include titulos;}
+h4{
+    @include texto;
+}
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        @include titulos;
+        font-size: 20px;}
+p {
+    font-size: 16px;
+            }
+h4{
+    @include textomobile;
+            }
+            
+@media only screen and (min-width: 576px) {
+            
+    h1 {
+    font-size: 30px;
+            }
+    p {
+    font-size: 15px;
+            }}}

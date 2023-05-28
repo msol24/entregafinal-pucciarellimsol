@@ -1,0 +1,87 @@
+
+.formulario{
+    @include flex-center;
+}
+.formulario{
+
+    display: flex;
+    
+}
+.formulario form{
+    justify-content: center;
+    display:inline-block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: $box-shadow;
+}
+form label{
+    justify-items: center;
+    font-size: 10px;
+}
+form input, textarea{
+font-family: map-get($fonts, form);
+display: flex;
+padding: 10px 10px;
+margin: 0 0 10px;
+width: 100%;
+background: none;
+border-bottom:  1.5px solid $color-verde;
+border-top: none;
+border-left: none;
+border-right: none;
+}
+main button{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    background:$color-verde;
+    border: 1px solid;
+    justify-content: center;
+}
+.img-unite{
+    background-image: url(../imagenes/grupo1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 10px;
+    height: 60vh;
+    opacity: 0.9;
+}
+@media (max-width: 570px) {
+    .formulario form{
+        display:inline-block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: $box-shadow;
+    }
+    .form input, textarea{
+        width: 100%;}
+    .img-mobile {
+        display: block;
+        margin: 10px;
+        width: 100%;
+    }
+.img-unite{
+        display:none;
+    }
+.formulario {
+	display:flex;
+    width: 100%;
+main button{
+        padding: 5px;
+        border-radius: 5px;
+        background:$color-verde;
+        border: 1px solid;
+    }
+	}}
+    @media only screen and (min-width: 571px) {
+        .img-mobile {
+            display: none;
+        }
+        .img-unite{
+            display: block;
+        }
+    }
+        
